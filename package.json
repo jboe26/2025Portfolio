@@ -1,0 +1,23 @@
+{
+  "name": "2025portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/jboe26/2025Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/jboe26/2025Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jboe26/2025Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "devDependencies": {
+    "sass": "^1.97.1"
+  }
+}
