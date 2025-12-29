@@ -1,21 +1,19 @@
 {
   "name": "2025portfolio",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/jboe26/2025Portfolio#readme",
+  "description": "Josh Boepple's 2025 portfolio site",
+  "homepage": "https://joshboeppleportfolio.com",
   "bugs": {
     "url": "https://github.com/jboe26/2025Portfolio/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jboe26/2025Portfolio.git"
+    "url": "https://github.com/jboe26/2025Portfolio.git"
   },
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "author": "Josh Boepple",
   "scripts": {
-    "sass": "sass --watch scss:dist/css"
+    "build": "sass scss:dist/css"
   },
   "devDependencies": {
     "sass": "^1.97.1"
