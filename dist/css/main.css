@@ -120,6 +120,16 @@
   transition-delay: 0.4s;
 }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -128,6 +138,9 @@
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
   ul.menu-nav,
   div.menu-branding {
@@ -155,6 +168,9 @@
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 * {
@@ -221,7 +237,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 }
 main .icons {
   margin-top: 1rem;
@@ -238,6 +254,84 @@ main#home {
 }
 main#home h1 {
   margin-top: 20vh;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "project-1 project-2 project-3";
+}
+.about-info .bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border: #4682b4 3px solid;
+}
+.about-info .bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+.about-info .project-1 {
+  grid-area: project-1;
+}
+.about-info .project-2 {
+  grid-area: project-2;
+}
+.about-info .project-3 {
+  grid-area: project-3;
+}
+.about-info .project {
+  background: rgb(80.75, 80.75, 80.75);
+  padding: 0.5rem;
+  border-bottom: #4682b4 5px solid;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+}
+.projects img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #4682b4;
+  transition: all 0.5s ease-out;
+}
+
+.btn, .btn-light, .btn-dark {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  background: #4682b4;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: 0;
+  cursor: pointer;
+}
+.btn:hover, .btn-light:hover, .btn-dark:hover {
+  background: #4682b4;
+  color: #000;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+.btn-light {
+  background: rgb(195.5, 195.5, 195.5);
+  color: #333;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(42.5, 42.5, 42.5);
+  color: #fff;
+  height: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */
