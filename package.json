@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Josh Boepple",
   "scripts": {
-    "build": "sass scss:dist/css"
+    "build": "sass scss:css"
   },
   "devDependencies": {
     "sass": "^1.97.1"
